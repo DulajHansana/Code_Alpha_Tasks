@@ -1,16 +1,19 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <div class="full-img" id="fullImgBox">
         <img src="assets/img1.jfif" alt="image1" id="fullImg">
         <span onclick="closeFullImg()">X</span>
-    
     </div>
+
     <div class="image-gallery">
         <img src="assets/img1.jfif" alt="image1" onclick="openFullImg(this.src)">
         <img src="assets/img2.jfif" alt="image2" onclick="openFullImg(this.src)">
@@ -18,12 +21,10 @@
         <img src="assets/img4.jfif" alt="image4" onclick="openFullImg(this.src)">
         <img src="assets/img7.jfif" alt="image5" onclick="openFullImg(this.src)">
         <img src="assets/img6.jfif" alt="image6" onclick="openFullImg(this.src)">
-       
     </div>
     
-    
+<!-- Java Script-->
 <script>
-
     var fullImgBox = document.getElementById("fullImgBox");
     var fullImg = document.getElementById("fullImg");
 
@@ -35,7 +36,7 @@
         fullImgBox.style.display = "none";
 
     }
-
 </script>
+
 </body>
 </html>
