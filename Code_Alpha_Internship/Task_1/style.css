@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 body{
-    background-color: antiquewhite;
+    background-color: rgb(190, 181, 202);
 }
 .image-gallery{
     width: 80%;
@@ -22,14 +22,28 @@ body{
 .image-gallery img:hover{
     transform: scale(0.8) rotate(-15deg);
     border-radius: 20px;
-    box-shadow: 0 32px 7px rgb(244, 180, 247);
+    box-shadow: 0 32px 7px rgb(121, 112, 112);
 }
 .full-img{
     width: 100%;
-    height: 1000vh;
+    height: 100vh;
     background: rgba(0,0,0,0.9);
     position: fixed;
     top: 0;
     left: 0;
-    
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.full-img img{
+    width: 90%;
+    max-width: 400px;
+}
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(179, 171, 171);
+    cursor: pointer;
 }
