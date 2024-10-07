@@ -12,12 +12,12 @@
     
     </div>
     <div class="image-gallery">
-        <img src="assets/img1.jfif" alt="image1" onclick="openFullImg()">
-        <img src="assets/img2.jfif" alt="image2" onclick="openFullImg()">
-        <img src="assets/img3.jfif" alt="image3" onclick="openFullImg()">
-        <img src="assets/img4.jfif" alt="image4" onclick="openFullImg()">
-        <img src="assets/img7.jfif" alt="image5" onclick="openFullImg()">
-        <img src="assets/img6.jfif" alt="image6" onclick="openFullImg()">
+        <img src="assets/img1.jfif" alt="image1" onclick="openFullImg(this.src)">
+        <img src="assets/img2.jfif" alt="image2" onclick="openFullImg(this.src)">
+        <img src="assets/img3.jfif" alt="image3" onclick="openFullImg(this.src)">
+        <img src="assets/img4.jfif" alt="image4" onclick="openFullImg(this.src)">
+        <img src="assets/img7.jfif" alt="image5" onclick="openFullImg(this.src)">
+        <img src="assets/img6.jfif" alt="image6" onclick="openFullImg(this.src)">
        
     </div>
     
@@ -27,8 +27,13 @@
     var fullImgBox = document.getElementById("fullImgBox");
     var fullImg = document.getElementById("fullImg");
 
-    function openFullImg(){
+    function openFullImg(pic){
         fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+
     }
 
 </script>
