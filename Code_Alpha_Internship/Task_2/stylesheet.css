@@ -23,6 +23,7 @@ body{
     text-align: left;
     border: none;
     background-color: rgb(117, 117, 117);
+    color: white;
 }
 
 #keys{
@@ -50,5 +51,13 @@ button:hover{
 
 button:active{
     background-color: rgb(223, 223, 223);
-
 }
+ .operator-btn{
+    background-color: rgb(245, 195, 102);
+ }
+ .operator-btn:hover{
+    background-color: rgb(255, 228, 177);
+ }
+ .operator-btn:active{
+    background-color: rgb(223, 223, 223);
+ }
