@@ -5,7 +5,7 @@ function appendToDisplay(input){
     display.value += input;
 }
 
-function calculate(){
+function calculate(){//comment
     try{
         display.value = eval(display.value);
     }
