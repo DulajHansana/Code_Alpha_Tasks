@@ -168,7 +168,7 @@ function setUpdate(){
         if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
         if(durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
 
-        curr_time.textContent = currentMinutes + ":" + currentSeconds;
+        curr_time.textContent = currentMinutes + ":" + currentSeconds;//
         total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
 }
